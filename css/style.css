@@ -71,6 +71,9 @@ table tr td:nth-child(4) {
 .card .btn {
     margin: 2px;
 }
+#site6image img {
+    width: 60%;
+}
 
 /* Future */
 .future li{
@@ -116,7 +119,7 @@ table tr td:nth-child(4) {
     text-align: center;
 }
   
-/* 画面が780pxまでのとき */
+/* 画面が812pxまでのとき */
 @media screen and (max-width: 812px) {
     .jumbotron {
         height: 80vh;
@@ -136,6 +139,16 @@ table tr td:nth-child(4) {
         padding-top:65px;
     }
 
-    /* Learning */
-
+}
+/* 画面が480pxまでのとき */
+@media screen and (max-width: 480px) {
+    .media {
+        flex-direction: column;
+    }
+    .media-body h5 {
+        padding-top: 10px;
+    }
+    #site6image img {
+        width: 100%;
+    }
 }
