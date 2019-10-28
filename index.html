@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <!-- ナビ -->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+      <buttion class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </buttion>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a href="#profile-top" class="nav-link">Profile</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#career-top" class="nav-link">Career</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#learning-top" class="nav-link">Leaning</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#future-top" class="nav-link">Future</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact-top" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ジャンボトロン -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to Portfolio Page!</h1>
+        <p class="lead">ここでは、私の実務経歴や勉強のために作成した成果物などをご紹介します</p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- プロフィール -->
+      <div class="container profile">
+        <h2 id="profile-top">Profile</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">名前：高橋 真由（たかはし まゆ）</li>
+          <li class="list-group-item">出身：千葉市 花見川区</li>
+          <li class="list-group-item">生年月日：平成6年1月9日（25歳）</li>
+          <li class="list-group-item">趣味：
+            <a href="#!" data-toggle="modal" data-target="#mygardening">園芸</a>、
+            <!-- 園芸モーダル -->
+            <div class="modal fade" id="mygardening" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="padding: 15px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">趣味の園芸</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="media">
+                      <a href="#" class="align-self-start mr-3">
+                        <img src="image/IMG_20191005_142443.jpg" alt="ハイビスカス">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="mt-0">10月5日　ハイビスカスが咲きました</h5>
+                        <p>今年になって4度目くらいの花が咲きました。
+                          真っ赤な花は元気とパワーを与えてくれます。
+                        </p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                    <div class="media">
+                      <a href="#" class="align-self-start mr-3">
+                        <img src="image/IMG_20191024_105326.jpg" alt="バラの花">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="mt-0">10月24日　バラの花が咲きました</h5>
+                        <p>きれいな色合いのバラが咲きました。この枝にはいろんな色のバラが咲くのがとても不思議です。</p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                    <div class="media">
+                      <a href="#" class="align-self-start mr-3">
+                        <img src="image/IMG_20191023_100836.jpg" alt="ヒヤシンスの球根">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="mt-0">10月22日から　ヒヤシンスを水耕栽培します</h5>
+                        <p>今年はヒヤシンスの水耕栽培に挑戦します。一か月間はこのまま冷蔵庫へ。</p>
+                      </div><!-- /.media-body -->
+                    </div><!-- /.media -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                  </div><!-- /.modal-footer -->
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            音楽鑑賞、
+            旅行　etc
+          </li>
+        </ul>
+      </div>
+      <!-- 経歴 -->
+      <div class="container career">
+        <h2 id="career-top">Career</h2>
+        <p>SI企業（在籍：2016年4月～2019年9月）にて</p>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-active">
+              <tr>
+                <th class="text-nowrap">期間</th>
+                <th class="text-nowrap">カテゴリ</th>
+                <th class="text-nowrap">環境</th>
+                <th class="text-nowrap">ポジション</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-nowrap">2016年10月～2017年7月、<br>2017年12月～2018年12月<br>(2年弱)</td>
+                <td class="text-nowrap">建設業の受発注システム</td>
+                <td class="text-nowrap">言語など：<span class="badge">PL/SQL</span> <span class="badge">HTML/CSS</span> <span class="badge">JavaScript</span> <span class="badge">JQuery</span><br>
+                    DB：<span class="badge">Oracle Database</span><br>
+                    その他ツールなど：<span class="badge">Backlog</span> <span class="badge">Object Browser</span></td>
+                <td>調査、プログラマー、テスター</td>
+              </tr>
+              <tr>
+                <td>2017年7月～2017年12月<br>(半年弱)</td>
+                <td>社内の人材育成支援システム</td>
+                <td>言語など：<span class="badge">Java</span> <span class="badge">Spring Framework</span> <span class="badge">TERASOLUNA</span> <span class="badge">HTML/CSS</span> <span class="badge">bootstrap</span> <span class="badge">JavaScript</span> <span class="badge">JQuery</span><br>
+                  DB：<span class="badge">PostgreSQL</span><br>
+                  その他ツールなど：<span class="badge">Redmine</span> <span class="badge">Source Tree</span> <span class="badge">A5:SQL Mk-2</span>
+                </td>
+                <td>システム設計、プログラマー、テスター</td>
+              </tr>
+              <tr>
+                <td>2018年12月～2019年5月<br>(半年弱)</td>
+                <td>製造業の実績収集、受配送、運賃分析等のシステム（マイグレーション）</td>
+                <td>言語など：<span class="badge">VB.NET</span> <span class="badge">Java</span><br>
+                  DB：<span class="badge">Oracle Database</span><br>
+                  その他ツールなど：<span class="badge">Redmine</span> <span class="badge">TortoiseSVN</span> <span class="badge">VisualSVN</span> <span class="badge">Object Browser</span>
+                </td>
+                <td>調査、資料作成、ライブラリアン、テスター</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 学んだこと -->
+      <div class="container learning">
+        <h2 id="learning-top">Learning</h2>
+        <p>期間：2019年7月～2019年9月で勉強した内容を紹介します</p>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="card img-thumbnail　bg-dark">
+              <img class="card-img-top" src="image/site3.PNG" alt="サイト３">
+              <div class="card-body px-2 py-3">
+                <h5 class="card-title">サイト作成３</h5>
+                <p class="card-text">HTML/CSSやJavaScriptの勉強として作成しました。テーマや使用用途は特にありません。</p>
+                <p class="mb-0"><a href="#!" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#site3modal">詳細</a> <a href="https://takahashimayu.github.io/site3/index.html" target="_blank" class="btn btn-primary btn-sm">このページへ</a></p>
+                <!-- サイト３モーダル -->
+                <div class="modal fade" id="site3modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="padding: 15px;">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="site3ModalLabel">サイト作成３について</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>作成期間</h6>
+                        <p>3週間ほど</p>
+                        <h6>使用技術</h6>
+                        <p>HTML/CSS、JavaScript</p>
+                        <h6>機能</h6>
+                        <ul>
+                          <li>レスポンシブデザイン</li>
+                          <li>ハンバーガーメニュー</li>
+                          <li>アコーディオンメニュー</li>
+                          <li>フォーム（入力制限、入力文字数カウント）</li>
+                          <li>スライドショー</li>
+                          <li>イメージギャラリー</li>
+                          <li>YoutubeDataAPIを用いた動画ギャラリー</li>
+                        </ul>
+                        <h6>  備考</h6>
+                        <p>テーマ、使用用途は特にありません</p>
+                        <h6>Gitリポジトリ</h6>
+                        <p><a href="https://github.com/takahashimayu/site3" target="_blank">こちら</a></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                      </div><!-- /.modal-footer -->
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+          <div class="col-sm-6 col-md-3">
+            <div class="card img-thumbnail">
+              <img class="card-img-top" src="image/site4.PNG" alt="サイト４">
+              <div class="card-body px-2 py-3">
+                <h5 class="card-title">サイト作成４</h5>
+                <p class="card-text">サイト作成３をできる限りJQueryで書き換えました。内容はサイト作成３と変わりません。</p>
+                <p class="mb-0"><a href="#!" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#site4modal">詳細</a> <a href="https://takahashimayu.github.io/site3/index.html" target="_blank" class="btn btn-primary btn-sm">このページへ</a></p>
+                <!-- サイト４モーダル -->
+                <div class="modal fade" id="site4modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content" style="padding: 15px;">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="site4ModalLabel">サイト作成４について</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>作成期間</h6>
+                          <p>1週間ほど</p>
+                          <h6>使用技術</h6>
+                          <p>HTML/CSS、JavaScript、JQuery</p>
+                          <h6>機能</h6>
+                          <p>サイト作成３と同じ</p>
+                          <h6>備考</h6>
+                          <p>サイト作成３をできる限りJQueryに書き換えました</p>
+                          <h6>Gitリポジトリ</h6>
+                          <p><a href="https://github.com/takahashimayu/site4" target="_blank">こちら</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                        </div><!-- /.modal-footer -->
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+          <div class="col-sm-6 col-md-3">
+            <div class="card img-thumbnail">
+              <img class="card-img-top" src="image/site6.PNG" alt="基礎編最終課題">
+              <div class="card-body px-2 py-3">
+                <h5 class="card-title">基礎編最終課題</h5>
+                <p class="card-text">PHP、MYSQLを用いて掲示板サイトを作成しました。テーマはヘルスケアです。</p>
+                <p class="mb-0"><a href="#!" data-toggle="modal" data-target="#site6modal" class="btn btn-secondary btn-sm">詳細</a> <a href="#!" data-toggle="modal" data-target="#site6image" class="btn btn-primary btn-sm">UIはこちら</a></p>
+                <!-- 基礎編最終課題モーダル -->
+                <div class="modal fade" id="site6modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="padding: 15px;">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="site6ModalLabel">基礎編最終課題について</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>作成期間</h6>
+                        <p>3週間ほど</p>
+                        <h6>使用技術</h6>
+                        <p>HTML/CSS、JavaScript、JQuery、PHP、MYSQL</p>
+                        <h6>機能</h6>
+                        <ul>
+                          <li>レスポンシブデザイン</li>
+                          <li>JavaScriptでの動き</li>
+                          <li>jQueryでの動き</li>
+                          <li>コンタクトフォーム（PHPにて）</li>
+                          <li>掲示板（PHPにて）</li>
+                          <li>WebAPIの使用</li>
+                        </ul>
+                        <h6>備考</h6>
+                        <p>テーマはヘルスケアです。自分の体調をつぶやく機能と3時間ごとの気候（天候、気圧など）を表示する機能をつけました。</p>
+                        <h6>Gitリポジトリ</h6>
+                        <p><a href="https://github.com/takahashimayu/baselastpractice" target="_blank">こちら</a></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                      </div><!-- /.modal-footer -->
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- 基礎編最終課題のUI -->
+                <div class="modal fade" id="site6image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content" style="padding: 15px;">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="site6ImageLabel">基礎編最終課題のUI</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h6>１．Health care Board</h6>
+                          <p>自分の体調をつぶやくページ</p>
+                          <img src="image/site6.PNG" alt="ヘルスケア掲示板" style="width:400px;">
+                          <h6>２．Wether info</h6>
+                          <p>住まいの都市の気候を参照するページ</p>
+                          <img src="image/site6_2.PNG" alt="天気情報" style="width:400px;">
+                          <h6>３．Contact</h6>
+                          <p>お問合せフォームのページ</p>
+                          <img src="image/site6_3.PNG" alt="お問合せフォーム" style="width:400px;">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                        </div><!-- /.modal-footer -->
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+        </div><!-- /.row -->
+      </div>
+      <!-- 今後 -->
+      <div class="container future">
+        <h2 id="future-top">Future</h2>
+        <p>今後やってみたいことを紹介します</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">専門的な領域へチャレンジ<br><span class="small-font">広く平均的にこなすことがあまり得意ではありません。
+            自分ができることで何か極めて役に立つことが理想です。</span>
+          </li>
+          <li class="list-group-item">ネコを飼う<br><span class="small-font">動物が大好きです。癒しの空間で在宅ワークできたら嬉しいです。</span></li>
+        </ul>
+      </div>
+      <!-- コンタクト -->
+      <div class="container contact">
+        <h2 id="contact-top">Contact / Other</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">mail：m2bear.happy@gmail.com</li>
+            <li class="list-group-item">github：takahashimayu（<a href="https://github.com/takahashimayu" target="_blank">こちら</a>から）</li>
+          </ul>
+      </div>
+      <div id="page_top"><a href="#"></a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@charset "utf-8";
+body {
+    font-family: 'Armata', 'Kosugi Maru', sans-serif;
+    scroll-behavior: smooth;
+}
+nav a {
+    color: #000;
+}
+.jumbotron {
+    background-image: url('../image/flower_1.jpg');
+    background-size: cover;
+    background-position: center 10%;
+    filter: contrast(80%);
+    height: 90vh;
+}
+.jumbotron h1 {
+    padding-top:65px;
+}
+.jumbotron p {
+    font-size: 1.1em;
+}
+.jumbotron img {
+    margin-top: 50px;
+    height: 200px;
+}
+.container .container {
+    padding: 20px 0;
+}
+
+/* 園芸モーダル */
+#mygardening img {
+    filter: contrast(80%);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Career */
+table tbody tr td {
+    line-height: 1.6em;
+}
+table tr th:nth-child(1),
+table tr td:nth-child(1) {
+    width: 22%;
+}
+table tr th:nth-child(2),
+table tr td:nth-child(2) {
+    width: 22%;
+}
+table tr th:nth-child(3),
+table tr td:nth-child(3) {
+    width: 38%;
+}
+table tr th:nth-child(4),
+table tr td:nth-child(4) {
+    width: 18%;
+}
+.badge {
+    background-color: #ede4e1;
+    /* background-color: #e3d7a3; */
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+/* Learning */
+.card {
+    margin: 5px;
+}
+#site6image img {
+    margin-bottom: 50px;
+}
+.card .btn {
+    margin: 2px;
+}
+
+/* Future */
+.future li{
+    font-weight: bold;
+}
+.small-font {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+/* ページトップへ */
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #ef3f98;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+  
+/* 画面が780pxまでのとき */
+@media screen and (max-width: 812px) {
+    .jumbotron {
+        height: 80vh;
+    }
+    .jumbotron h1 {
+        font-size: 2.4em;
+        font-weight: bold;
+        line-height: 1.4em;
+    }
+    nav {
+        background-image: url('../image/flower_1.jpg');
+        background-color: #fff9f5;
+        filter: contrast(80%);
+    }
+    .container div h2 {
+        margin-top:-65px;
+        padding-top:65px;
+    }
+
+    /* Learning */
+
+}
