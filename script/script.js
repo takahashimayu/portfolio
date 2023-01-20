@@ -32,4 +32,16 @@ $(function(){
         return '';
     }
 
+    // 年齢セット
+    $('#age').html(getAge(1994,1,9));
+
+    // 年齢取得
+    function getAge(birthYear, birthMonth, birthDate) {
+        let today = new Date();
+        if (today.getMonth() > birthMonth || (today.getMonth() == birthMonth - 1 && today.getDate() >= birthDate)) {
+            return today.getFullYear() - birthYear;
+        } else {
+            return today.getFullYear() - birthYear - 1;
+        }
+    }
 });

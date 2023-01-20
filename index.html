@@ -30,13 +30,13 @@
             <a href="#career-top" class="nav-link">Career</a>
           </li>
           <li class="navbar-item">
+            <a href="#certification-top" class="nav-link">Certification</a>
+          </li>
+          <li class="navbar-item">
             <a href="#learning-top" class="nav-link">Leaning</a>
           </li>
           <li class="navbar-item">
-            <a href="#future-top" class="nav-link">Future</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#contact-top" class="nav-link">Contact</a>
+            <a href="#info-top" class="nav-link">Info</a>
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Welcome to Portfolio Page!</h1>
-        <p class="lead">ここでは、私の実務経歴や勉強のために作成した成果物などをご紹介します</p>
+        <p class="lead">最終更新：2023年1月21日</p>
       </div>
     </div>
     <div class="container">
@@ -55,7 +55,7 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item">名前：高橋 真由（たかはし まゆ）</li>
           <li class="list-group-item">出身：千葉市 花見川区</li>
-          <li class="list-group-item">生年月日：平成6年1月9日（25歳）</li>
+          <li class="list-group-item">生年月日：平成6年1月9日（<span id="age"></span>歳）</li>
           <li class="list-group-item">趣味：
             <a href="#!" data-toggle="modal" data-target="#mygardening">園芸</a>、
             <!-- 園芸モーダル -->
@@ -74,7 +74,7 @@
                         <img src="image/IMG_20191005_142443.jpg" alt="ハイビスカス">
                       </a>
                       <div class="media-body">
-                        <h5 class="mt-0">10月5日　ハイビスカスが咲きました</h5>
+                        <h5 class="mt-0">2019年10月5日　ハイビスカスが咲きました</h5>
                         <p>今年になって4度目くらいの花が咲きました。
                           真っ赤な花は元気とパワーを与えてくれます。
                         </p>
@@ -85,7 +85,7 @@
                         <img src="image/IMG_20191024_105326.jpg" alt="バラの花">
                       </a>
                       <div class="media-body">
-                        <h5 class="mt-0">10月24日　バラの花が咲きました</h5>
+                        <h5 class="mt-0">2019年10月24日　バラの花が咲きました</h5>
                         <p>きれいな色合いのバラが咲きました。この枝にはいろんな色のバラが咲くのがとても不思議です。</p>
                       </div><!-- /.media-body -->
                     </div><!-- /.media -->
@@ -94,7 +94,7 @@
                         <img src="image/IMG_20191023_100836.jpg" alt="ヒヤシンスの球根">
                       </a>
                       <div class="media-body">
-                        <h5 class="mt-0">10月22日から　ヒヤシンスを水耕栽培します</h5>
+                        <h5 class="mt-0">2019年10月22日から　ヒヤシンスを水耕栽培します</h5>
                         <p>今年はヒヤシンスの水耕栽培に挑戦します。一か月間はこのまま冷蔵庫へ。</p>
                       </div><!-- /.media-body -->
                     </div><!-- /.media -->
@@ -105,21 +105,20 @@
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-            音楽鑑賞、
-            旅行　etc
+            音楽鑑賞 etc
           </li>
         </ul>
       </div>
       <!-- 経歴 -->
       <div class="container career">
         <h2 id="career-top">Career</h2>
-        <p>SI企業（在籍：2016年4月～2019年9月）にて</p>
+        <p>1社目：SI企業（約3年間在籍）</p>
         <div class="table-responsive">
           <table class="table table-bordered">
             <thead class="table-active">
               <tr>
                 <th class="text-nowrap">期間</th>
-                <th class="text-nowrap">カテゴリ</th>
+                <th class="text-nowrap">業種</th>
                 <th class="text-nowrap">環境</th>
                 <th class="text-nowrap">ポジション</th>
               </tr>
@@ -128,32 +127,72 @@
               <tr>
                 <td class="text-nowrap">2016年10月～2017年7月、<br>2017年12月～2018年12月<br>(2年弱)</td>
                 <td class="text-nowrap">建設業の受発注システム</td>
-                <td class="text-nowrap">言語など：<span class="badge">PL/SQL</span> <span class="badge">HTML/CSS</span> <span class="badge">JavaScript</span> <span class="badge">JQuery</span><br>
-                    DB：<span class="badge">Oracle Database</span><br>
-                    その他ツールなど：<span class="badge">Backlog</span> <span class="badge">Object Browser</span></td>
+                <td class="text-nowrap">
+                  言語：<span class="badge">PL/SQL</span> <span class="badge">HTML/CSS</span> <span class="badge">JavaScript</span><br>
+                  フレームワーク：<span class="badge">JQuery</span><br>
+                  DB：<span class="badge">Oracle Database</span><br>
+                  その他ツール：<span class="badge">Backlog</span> <span class="badge">Object Browser</span></td>
                 <td>調査、プログラマー、テスター</td>
               </tr>
               <tr>
                 <td>2017年7月～2017年12月<br>(半年弱)</td>
                 <td>社内の人材育成支援システム</td>
-                <td>言語など：<span class="badge">Java</span> <span class="badge">Spring Framework</span> <span class="badge">TERASOLUNA</span> <span class="badge">HTML/CSS</span> <span class="badge">bootstrap</span> <span class="badge">JavaScript</span> <span class="badge">JQuery</span><br>
+                <td>
+                  言語など：<span class="badge">Java</span> <span class="badge">Spring Framework</span> <span class="badge">TERASOLUNA</span> <span class="badge">HTML/CSS</span> <span class="badge">bootstrap</span> <span class="badge">JavaScript</span> <span class="badge">JQuery</span><br>
                   DB：<span class="badge">PostgreSQL</span><br>
-                  その他ツールなど：<span class="badge">Redmine</span> <span class="badge">Source Tree</span> <span class="badge">A5:SQL Mk-2</span>
+                  その他ツール：<span class="badge">Redmine</span> <span class="badge">Source Tree</span> <span class="badge">A5:SQL Mk-2</span>
                 </td>
                 <td>システム設計、プログラマー、テスター</td>
               </tr>
               <tr>
                 <td>2018年12月～2019年5月<br>(半年弱)</td>
                 <td>製造業の実績収集、受配送、運賃分析等のシステム（マイグレーション）</td>
-                <td>言語など：<span class="badge">VB.NET</span> <span class="badge">Java</span><br>
+                <td>
+                  言語：<span class="badge">VB.NET</span> <span class="badge">Java</span><br>
                   DB：<span class="badge">Oracle Database</span><br>
-                  その他ツールなど：<span class="badge">Redmine</span> <span class="badge">TortoiseSVN</span> <span class="badge">VisualSVN</span> <span class="badge">Object Browser</span>
+                  その他ツール：<span class="badge">Redmine</span> <span class="badge">TortoiseSVN</span> <span class="badge">VisualSVN</span> <span class="badge">Object Browser</span>
                 </td>
                 <td>調査、資料作成、ライブラリアン、テスター</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p>2社目：Ruby On Rails による受託開発企業（約3年間在籍）</p>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-active">
+              <tr>
+                <th class="text-nowrap">期間</th>
+                <th class="text-nowrap">業種</th>
+                <th class="text-nowrap">環境</th>
+                <th class="text-nowrap">ポジション</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-nowrap">2020年2月～現在<br>(3年-)</td>
+                <td class="text-nowrap">健康管理支援システム、<br>物流倉庫会社 従業員向けシステム、<br>エネルギー販売会社 下請け企業<br>営業支援向けシステム<br>など</td>
+                <td class="text-nowrap">
+                  言語：<span class="badge">Ruby On Rails</span><br>
+                  フレームワーク：<span class="badge">RSpec</span> <span class="badge">GraphQL</span> など<br>
+                  DB：<span class="badge">PostgreSQL</span> <span class="badge">MySQL</span><br>
+                  ミドルウェア：<span class="badge">Docker</span><br>
+                  その他ツール：<span class="badge">GitHub/GitLab</span> <span class="badge">RubyMine</span> <span class="badge">Slack</span> <span class="badge">Jira</span></td>
+                <td>開発、テーブル設計(機能単位)、UMLによる資料作成</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 資格 -->
+      <div class="container certification">
+        <h2 id="#certification-top">Certification</h2>
+        <p>保持している資格について</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">応用情報処理技術者(2020年4月取得)</li>
+          <li class="list-group-item">データベーススペシャリスト(2021年10月取得)</li>
+          <li class="list-group-item">情報処理安全確保支援士(2022年10月取得)</li>
+        </ul>
       </div>
       <!-- 学んだこと -->
       <div class="container learning">
@@ -215,32 +254,32 @@
                 <p class="mb-0"><a href="#!" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#site4modal">詳細</a> <a href="https://takahashimayu.github.io/site3/index.html" target="_blank" class="btn btn-primary btn-sm">このページへ</a></p>
                 <!-- サイト４モーダル -->
                 <div class="modal fade" id="site4modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content" style="padding: 15px;">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="site4ModalLabel">サイト作成４について</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <h6>作成期間</h6>
-                          <p>1週間ほど</p>
-                          <h6>使用技術</h6>
-                          <p>HTML/CSS、JavaScript、JQuery</p>
-                          <h6>機能</h6>
-                          <p>サイト作成３と同じ</p>
-                          <h6>備考</h6>
-                          <p>サイト作成３をできる限りJQueryに書き換えました</p>
-                          <h6>Gitリポジトリ</h6>
-                          <p><a href="https://github.com/takahashimayu/site4" target="_blank">こちら</a></p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                        </div><!-- /.modal-footer -->
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="padding: 15px;">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="site4ModalLabel">サイト作成４について</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>作成期間</h6>
+                        <p>1週間ほど</p>
+                        <h6>使用技術</h6>
+                        <p>HTML/CSS、JavaScript、JQuery</p>
+                        <h6>機能</h6>
+                        <p>サイト作成３と同じ</p>
+                        <h6>備考</h6>
+                        <p>サイト作成３をできる限りJQueryに書き換えました</p>
+                        <h6>Gitリポジトリ</h6>
+                        <p><a href="https://github.com/takahashimayu/site4" target="_blank">こちら</a></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                      </div><!-- /.modal-footer -->
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
               </div><!-- /.card-body -->
             </div><!-- /.card -->
           </div><!-- /.col-sm-6.col-md-3 -->
@@ -288,31 +327,31 @@
                 </div><!-- /.modal -->
                 <!-- 基礎編最終課題のUI -->
                 <div class="modal fade" id="site6image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content" style="padding: 15px;">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="site6ImageLabel">基礎編最終課題のUI</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <h6>１．Health care Board</h6>
-                          <p>自分の体調をつぶやくページ</p>
-                          <img src="image/site6.PNG" alt="ヘルスケア掲示板">
-                          <h6>２．Wether info</h6>
-                          <p>住まいの都市の気候を参照するページ</p>
-                          <img src="image/site6_2.PNG" alt="天気情報">
-                          <h6>３．Contact</h6>
-                          <p>お問合せフォームのページ</p>
-                          <img src="image/site6_3.PNG" alt="お問合せフォーム">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                        </div><!-- /.modal-footer -->
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="padding: 15px;">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="site6ImageLabel">基礎編最終課題のUI</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6>１．Health care Board</h6>
+                        <p>自分の体調をつぶやくページ</p>
+                        <img src="image/site6.PNG" alt="ヘルスケア掲示板">
+                        <h6>２．Wether info</h6>
+                        <p>住まいの都市の気候を参照するページ</p>
+                        <img src="image/site6_2.PNG" alt="天気情報">
+                        <h6>３．Contact</h6>
+                        <p>お問合せフォームのページ</p>
+                        <img src="image/site6_3.PNG" alt="お問合せフォーム">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                      </div><!-- /.modal-footer -->
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
               </div><!-- /.card-body -->
             </div><!-- /.card -->
           </div><!-- /.col-sm-6.col-md-3 -->
@@ -356,25 +395,14 @@
           </div><!-- /.col-sm-6.col-md-3 -->
         </div><!-- /.row -->
       </div>
-      <!-- 今後 -->
-      <div class="container future">
-        <h2 id="future-top">Future</h2>
-        <p>今後やってみたいことを紹介します</p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">仕事を通して社会貢献をする<br><span class="small-font">
-            地域活性化、社会インフラを整える、生活をより豊かにする等について、技術の面で貢献したいです。
-            </span>
-          </li>
-          <li class="list-group-item">ネコを飼う<br><span class="small-font">動物が好きです。いつかはネコと一緒に暮らしたいです。</span></li>
-        </ul>
-      </div>
       <!-- コンタクト -->
-      <div class="container contact">
-        <h2 id="contact-top">Contact / Other</h2>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">mail：m2bear.happy@gmail.com</li>
-            <li class="list-group-item">github：takahashimayu（<a href="https://github.com/takahashimayu" target="_blank">こちら</a>から）</li>
-          </ul>
+      <div class="container info">
+        <h2 id="info-top">Info</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">e-mail：m2bear.happy@gmail.com</li>
+          <li class="list-group-item">GitHub：<a href="https://github.com/takahashimayu" target="_blank">https://github.com/takahashimayu</a></li>
+          <li class="list-group-item">Wantedly：<a href="https://www.wantedly.com/id/mayu_takahashi" target="_blank">https://www.wantedly.com/id/mayu_takahashi</a></li>
+        </ul>
       </div>
       <div id="page_top"><a href="#"></a></div>
     </div>
